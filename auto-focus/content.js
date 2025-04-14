@@ -1,0 +1,2 @@
+document.body.innerHTML = "<div style='display:flex;justify-content:center;align-items:center;height:100vh;font-size:2rem;font-family:sans-serif;'>Auto-Focus : Site bloqué pour rester concentré 💪</div>";
+document.body.style.backgroundColor = "#f2f2f2";

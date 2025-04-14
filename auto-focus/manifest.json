@@ -1,0 +1,24 @@
+{
+  "manifest_version": 3,
+  "name": "Auto-Focus",
+  "description": "Masque les sites distrayants pendant tes heures de travail.",
+  "version": "1.0",
+  "permissions": ["storage", "tabs", "scripting"],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "assets/icon.png",
+      "48": "assets/icon.png",
+      "128": "assets/icon.png"
+    }
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"]
+    }
+  ]
+}
